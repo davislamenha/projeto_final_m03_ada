@@ -115,6 +115,7 @@ class Match {
     { word: 'bahia', tip: 'Axé - acarajé - carnaval' },
     { word: 'pernambuco', tip: 'frevo - maracatu - mangue beat' },
     { word: 'sergipe', tip: 'caju - mangue - cangaço' },
+    { word: 'ceará', tip: 'cordel - baião de dois - forró' },
   ];
   #word;
   #player;
