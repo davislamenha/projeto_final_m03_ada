@@ -6,7 +6,7 @@
 
 ![Modulo](https://img.shields.io/badge/MODULO%203-2d3436?style=for-the-badge)![Modulo](https://img.shields.io/badge/PROJETO%20final-8757ff?style=for-the-badge)
 
-> Projeto criado para estudo e prática dos assuntos abordados no modulo 3 do curso de Frontend da Ada Tech.
+> Projeto de um jogo de forca criado para estudo e prática dos assuntos abordados no modulo 3 do curso de Frontend da Ada Tech.
 
 #### Tecnologias utilizadas
 
