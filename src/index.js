@@ -111,6 +111,8 @@ class GameController {
 
 class Match {
   #data = [
+    { word: 'pão-de-ló', tip: 'doce - festa - bolo' },
+    { word: 'rio grande do norte', tip: 'natal - dunas - cajueiro' },
     { word: 'alagoas', tip: 'Rio são francisco - quilombo - cangaço' },
     { word: 'bahia', tip: 'Axé - acarajé - carnaval' },
     { word: 'pernambuco', tip: 'frevo - maracatu - mangue beat' },
@@ -290,7 +292,10 @@ class Match {
 
   #createHangmanWord() {
     for (let i = 0; i < this.#word.length; i++) {
-      this.#hangmanWord.push('_');
+      const character = this.#word[i];
+      let hangmanCharacter =
+        character === ' ' || character === '-' ? character : '_';
+      this.#hangmanWord.push(hangmanCharacter);
     }
   }
 
@@ -325,8 +330,12 @@ class Player {
 class Guess {
   static isValid(guess) {
     const formatedGuess = guess.trim();
+    const guessValidation =
+      formatedGuess &&
+      typeof formatedGuess === 'string' &&
+      formatedGuess !== '-';
 
-    if (formatedGuess && typeof formatedGuess === 'string') return true;
+    if (guessValidation) return true;
     return false;
   }
 
